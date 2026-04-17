@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,22 @@
 </head>
 <body>
     <h1>Atividade 02</h1>
-<hr>
+    <hr>
 
-Esta palavra está em <b> Negrito </b>
+    Esta palavra está em <b>Negrito</b>
 
-<br><br>
-<hr>
+    <br><br>
+    <hr>
 
-Persista com coragem,<br› 
-abraçando desafios
+    Persista com coragem,<br>
+    abraçando desafios
 
-<hr>
-<hr>
+    <hr>
+    <hr>
 
-<p>Persista com coragem,</p> 
-<p>abraçando desafios.</p>
+    <p>Persista com coragem,</p> 
+    <p>abraçando desafios.</p>
 
-<hr>
-
+    <hr>
 </body> 
 </html>
-
