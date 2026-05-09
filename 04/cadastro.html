@@ -8,31 +8,66 @@
     <h1>Cadastro</h1>
     <form action="https://qfqdkj.hospedagemelastica.com.br/pweb/salvar.jsp" method="POST">
 
-        Login : <br>
+        Login: <br>
         <input type="text" required name="login"><br>
 
-        Senha : <br>
+        Senha: <br>
         <input type="password" name="senha"><br>
-        Confirmar senha : <br>
+        Confirmar senha: <br>
         <input type="password" name="confirmarsenha"><br>
 
-        Nome : <br>
+        Nome: <br>
         <input type="text" name="nome"><br>
 
-        Sexo : <br>
+        Sexo: <br>
         <input type="radio" value="Masculino" name="sexo">Masculino<br>
         <input type="radio" value="Feminino" name="sexo">Feminino<br>
 
-        Email : <br>
+        Email: <br>
         <input type="email" name="email"><br>
 
-        Interesses : <br>
+        Interesses: <br>
         <input type="checkbox" value="Futebol" name="interesses">Futebol<br>
         <input type="checkbox" value="Política" name="interesses">Política<br>
         <input type="checkbox" value="Economia" name="interesses">Economia<br>
         <input type="checkbox" value="Carros" name="interesses">Carros<br>
         <input type="checkbox" value="Celebridades" name="interesses">Celebridades<br>
+
         <br>
+        Estado: <br>
+        <select name="estado" id="estado">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+        </select>
+
+        <br><br>
+        <label for="observacoes">Observações:</label><br>
+        <textarea name="observacoes" id="observacoes" rows="5" cols="40" placeholder="Digite suas observações aqui..."></textarea><br><br>
 
         <input type="submit" value="Enviar">
 
