@@ -3,39 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Buscar Pacotes</title>
-
-<style>
-table{
-    width: 100%;
-}
-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-.campo{
-    display: flex;
-    flex-direction: column;
-}
-input, select{
-    padding: 10px;
-    margin-top: 5px;
-}
-button, input[type="submit"]{
-    grid-column: span 2;
-    padding: 12px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-</style>
-
 </head>
 <body>
 
 <table>
     <tr>
-        <td><img src="https://uca33f5f86be486693dd3b722afe.previews.dropboxusercontent.com/p/thumb/ADBe_N5ts8IbvaGKqLWfAoov_D3q_8P4Lp43DBTtuMUVuulaGzl4Qmx5kTIg0UrL6JyUyXROLsRwBZqvF7sRwqIoaM2aewjeNL4uv-2iSnQnTrwLTS8wMO8EpPXkaEMBCt_s9d6sZvkkm8AEwZcd1411AOjTFjhAVEde45_IU3Yjkzli-w3l89qNfH_XiU29KfZhzRxFJtE6qr9H2VAJl3vPs7EtW8dooaAo7o599Lo7DMrCRzFuHK0PYwrAryw21Rv1BXc3Qff20ycL5_WgWlThs3TSHsUmfzegCXOTA_qk0ShNFZ2n13rM9EkiRw5zhK1Re0dAU9MDjfjsGlk3hYSF7fHh9K7smIfIE2bpHy-cT0XCXwVlMRtw6JH_x7K6v3gUlG4bpjiEsC8xGA00bJZ9uf1jTOjaT3TriKZkACAHqA/p.png" /></td>
+        <td>
+            <img src="https://uca33f5f86be486693dd3b722afe.previews.dropboxusercontent.com/p/thumb/ADBe_N5ts8IbvaGKqLWfAoov_D3q_8P4Lp43DBTtuMUVuulaGzl4Qmx5kTIg0UrL6JyUyXROLsRwBZqvF7sRwqIoaM2aewjeNL4uv-2iSnQnTrwLTS8wMO8EpPXkaEMBCt_s9d6sZvkkm8AEwZcd1411AOjTFjhAVEde45_IU3Yjkzli-w3l89qNfH_XiU29KfZhzRxFJtE6qr9H2VAJl3vPs7EtW8dooaAo7o599Lo7DMrCRzFuHK0PYwrAryw21Rv1BXc3Qff20ycL5_WgWlThs3TSHsUmfzegCXOTA_qk0ShNFZ2n13rM9EkiRw5zhK1Re0dAU9MDjfjsGlk3hYSF7fHh9K7smIfIE2bpHy-cT0XCXwVlMRtw6JH_x7K6v3gUlG4bpjiEsC8xGA00bJZ9uf1jTOjaT3TriKZkACAHqA/p.png" />
+        </td>
     </tr>
 </table>
 
@@ -48,59 +23,44 @@ button, input[type="submit"]{
 
 <h1>Buscar Pacotes de Viagem</h1>
 
-<form action="https://qfqdkj.hospedagemelastica.com.br/pweb/salvar.jsp" method="POST">
+<form>
+    <label>Origem</label><br>
+    <input type="text" name="origem" placeholder="Cidade de origem"><br><br>
 
-    <div class="campo">
-        <label>Origem</label>
-        <input type="text" name="origem" placeholder="Cidade de origem">
-    </div>
+    <label>Destino</label><br>
+    <input type="text" name="destino" placeholder="Cidade de destino"><br><br>
 
-    <div class="campo">
-        <label>Destino</label>
-        <input type="text" name="destino" placeholder="Cidade de destino">
-    </div>
+    <label>Data de Partida</label><br>
+    <input type="date" name="data_partida"><br><br>
 
-    <div class="campo">
-        <label>Data de Partida</label>
-        <input type="date" name="data_partida">
-    </div>
+    <label>Data de Retorno</label><br>
+    <input type="date" name="data_retorno"><br><br>
 
-    <div class="campo">
-        <label>Data de Retorno</label>
-        <input type="date" name="data_retorno">
-    </div>
+    <label>Quartos</label><br>
+    <select name="quartos">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select><br><br>
 
-    <div class="campo">
-        <label>Quartos</label>
-        <select name="quartos">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
-    </div>
+    <label>Adultos</label><br>
+    <select name="adultos">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select><br><br>
 
-    <div class="campo">
-        <label>Quantidade de Adultos</label>
-        <select name="adultos">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select>
-    </div>
+    <label>Crianças</label><br>
+    <select name="criancas">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select><br><br>
 
-    <div class="campo">
-        <label>Quantidade de Crianças</label>
-        <select name="criancas">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
-    </div>
 
-    <input type="submit" value="Enviar">
-
+    <button type="button">Enviar</button>
 </form>
 
 </body>
