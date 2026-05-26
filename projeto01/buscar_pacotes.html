@@ -9,7 +9,7 @@ table{
 }
 form{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* duas colunas */
     gap: 20px;
 }
 .campo{
@@ -21,7 +21,7 @@ input, select{
     margin-top: 5px;
 }
 button{
-    grid-column: span 2;
+    grid-column: span 2; /* botão ocupa as duas colunas */
     padding: 12px;
     border: none;
     cursor: pointer;
@@ -41,7 +41,7 @@ button{
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="quem-somos.html">Quem Somos</a>
+    <a href="Quem_somos.html">Quem Somos</a>
     <a href="contato.html">Contato</a>
     <a href="buscar_pacotes.html">Buscar Pacotes</a>
 </nav>
@@ -49,41 +49,55 @@ button{
 <h1>Buscar Pacotes de Viagem</h1>
 
 <form>
-    <label>Origem</label><br>
-    <input type="text" name="origem" placeholder="Cidade de origem"><br><br>
+    <!-- Origem e Destino lado a lado -->
+    <div class="campo">
+        <label>Origem</label>
+        <input type="text" name="origem" placeholder="Cidade de origem">
+    </div>
 
-    <label>Destino</label><br>
-    <input type="text" name="destino" placeholder="Cidade de destino"><br><br>
+    <div class="campo">
+        <label>Destino</label>
+        <input type="text" name="destino" placeholder="Cidade de destino">
+    </div>
 
-    <label>Data de Partida</label><br>
-    <input type="date" name="data_partida"><br><br>
+    <div class="campo">
+        <label>Data de Partida</label>
+        <input type="date" name="data_partida">
+    </div>
 
-    <label>Data de Retorno</label><br>
-    <input type="date" name="data_retorno"><br><br>
+    <div class="campo">
+        <label>Data de Retorno</label>
+        <input type="date" name="data_retorno">
+    </div>
 
-    <label>Quartos</label><br>
-    <select name="quartos">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-    </select><br><br>
+    <div class="campo">
+        <label>Quartos</label>
+        <select name="quartos">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+    </div>
 
-    <label>Adultos</label><br>
-    <select name="adultos">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-    </select><br><br>
+    <div class="campo">
+        <label>Adultos</label>
+        <select name="adultos">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
 
-    <label>Crianças</label><br>
-    <select name="criancas">
-        <option>0</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-    </select><br><br>
-
+    <div class="campo">
+        <label>Crianças</label>
+        <select name="criancas">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+    </div>
 
     <button type="button">Enviar</button>
 </form>
