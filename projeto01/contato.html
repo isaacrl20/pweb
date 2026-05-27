@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>JM Viagens - Página principal</title>
+   <title>JM Viagens - Contato</title>
    <meta charset="utf-8" />
 </head>
 <body>
     <table border="0" width="900" align="center">
-      <!-- conteúdo_01 -->
       <tr>
         <td>
           <img src="img/logo.png" />
         </td>
-
-        <!-- conteúdo_02 -->
         <td align="right">
           <a href="index.html">Home</a> |
           <a href="Quem_somos.html">Quem somos</a> |
@@ -21,31 +18,47 @@
           <a href="destinos.html">Destinos</a>
         </td>
       </tr>
-
-      <!-- conteúdo_03 -->
       <tr>
         <td colspan="2">
           <img src="img/contato.png" />
         </td>
       </tr>
-
-      <!-- conteúdo_04 -->
       <tr>
         <td colspan="2">
-          <p style="font-size: 18px; font-weight: bold;">
-            <b>Email : jmviagens@jmviagens.com.br </b>
-          </p>
-          <p>
-            Na JM Viagens, cada cliente recebe atenção personalizada desde o planejamento até o retorno da viagem. Nosso time está disponível para esclarecer dúvidas, oferecer informações sobre pacotes e ajudar na escolha do roteiro ideal.
-
-Em caso de imprevistos ou problemas durante a viagem, garantimos suporte imediato para resolver situações relacionadas a voos, hospedagem ou passeios, assegurando tranquilidade e segurança.
-
-Você pode entrar em contato conosco por e-mail, telefone ou pessoalmente em nossa agência. Cada mensagem é tratada com dedicação, porque sua viagem merece o melhor cuidado.
-          </p>
+          <h2>Entre em Contato</h2>
+          <form action="https://qfqdkj.hospedagemelastica.com.br/pweb/salvar.jsp" method="POST">
+            
+          
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" style="width:100%; padding:8px;"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" style="width:100%; padding:8px;"><br><br>
+            
+        
+            <label>Destino:</label><br>
+            <input type="radio" id="bariloche" name="destino" value="Bariloche">
+            <label for="bariloche">Bariloche</label><br>
+            <input type="radio" id="maldivas" name="destino" value="Maldivas">
+            <label for="maldivas">Maldivas</label><br><br>
+            
+            
+            <label>Serviços desejáveis:</label><br>
+            <input type="checkbox" id="passagem" name="servicos" value="Passagem Aérea">
+            <label for="passagem">Passagem Aérea</label><br>
+            <input type="checkbox" id="hospedagem" name="servicos" value="Hospedagem">
+            <label for="hospedagem">Hospedagem</label><br>
+            <input type="checkbox" id="seguro" name="servicos" value="Seguro de Viagem">
+            <label for="seguro">Seguro de Viagem</label><br><br>
+            
+          
+            <label for="observacao">Observação:</label><br>
+            <textarea id="observacao" name="observacao" rows="4" style="width:100%; padding:8px;"></textarea><br><br>
+            
+        
+            <button type="submit" style="padding:10px 20px; font-weight:bold;">Enviar</button>
+          </form>
         </td>
       </tr>
-
-      <!-- conteúdo_05 -->
       <tr>
         <td colspan="2" align="center">
           <h4>Todos os direitos reservados</h4>
