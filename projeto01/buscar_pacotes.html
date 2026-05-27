@@ -3,54 +3,127 @@
 <head>
    <title>JM Viagens - Página principal</title>
    <meta charset="utf-8" />
+   <style>
+      table {
+         width: 900px;
+         margin: auto;
+      }
+      form {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 20px;
+      }
+      .campo {
+         display: flex;
+         flex-direction: column;
+      }
+      input, select {
+         padding: 10px;
+         margin-top: 5px;
+      }
+      button {
+         grid-column: span 2;
+         padding: 12px;
+         border: none;
+         cursor: pointer;
+         font-weight: bold;
+      }
+      img.banner {
+         width: 100%;
+         height: 300px;
+         object-fit: cover;
+      }
+   </style>
 </head>
 <body>
-    <table border="0" width="900" align="center">
+   <table border="0" align="center">
       <!-- conteúdo_01 -->
       <tr>
-        <td>
-          <img src="img/logo.png" />
-        </td>
-
-        <!-- conteúdo_02 -->
-        <td align="right">
-          <a href="index.html">Home</a> |
-          <a href="Quem_somos.html">Quem somos</a> |
-          <a href="contato.html">Contato</a> |
-          <a href="buscar_pacotes.html">Buscar pacotes</a> |
-          <a href="destinos.html">Destinos</a>
-        </td>
+         <td>
+            <img src="img/logo.png" />
+         </td>
+         <!-- conteúdo_02 -->
+         <td align="right">
+            <a href="index.html">Home</a> |
+            <a href="Quem_somos.html">Quem somos</a> |
+            <a href="contato.html">Contato</a> |
+            <a href="buscar_pacotes.html">Buscar pacotes</a> |
+            <a href="destinos.html">Destinos</a>
+         </td>
       </tr>
 
       <!-- conteúdo_03 -->
       <tr>
-        <td colspan="2">
-          <img src="img/Texto do seu parágrafo_cropped_resized_cropped.png" />
-        </td>
+         <td colspan="2">
+            <img src="img/Texto do seu parágrafo_cropped (1).png" class="banner" />
+         </td>
       </tr>
 
-      <!-- conteúdo_04 -->
+      <!-- conteúdo_04 substituído pelo formulário -->
       <tr>
-        <td colspan="2">
-          <p style="font-size: 18px; font-weight: bold;">
-            <b>Email : jmviagens@jmviagens.com.br </b>
-          </p>
-          <p>
-            Na JM Viagens, cada cliente recebe atenção personalizada desde o planejamento até o retorno da viagem. Nosso time está disponível para esclarecer dúvidas, oferecer informações sobre pacotes e ajudar na escolha do roteiro ideal.
+         <td colspan="2">
+            <h1>Buscar Pacotes de Viagem</h1>
+            <form action="https://qfqdkj.hospedagemelastica.com.br/pweb/salvar.jsp" method="POST">
+               <div class="campo">
+                  <label>Origem</label>
+                  <input type="text" name="origem" placeholder="Cidade de origem">
+               </div>
 
-Em caso de imprevistos ou problemas durante a viagem, garantimos suporte imediato para resolver situações relacionadas a voos, hospedagem ou passeios, assegurando tranquilidade e segurança.
+               <div class="campo">
+                  <label>Destino</label>
+                  <input type="text" name="destino" placeholder="Cidade de destino">
+               </div>
 
-Você pode entrar em contato conosco por e-mail, telefone ou pessoalmente em nossa agência. Cada mensagem é tratada com dedicação, porque sua viagem merece o melhor cuidado.
-          </p>
-        </td>
+               <div class="campo">
+                  <label>Data de Partida</label>
+                  <input type="date" name="data_partida">
+               </div>
+
+               <div class="campo">
+                  <label>Data de Retorno</label>
+                  <input type="date" name="data_retorno">
+               </div>
+
+               <div class="campo">
+                  <label>Quartos</label>
+                  <select name="quartos">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                  </select>
+               </div>
+
+               <div class="campo">
+                  <label>Adultos</label>
+                  <select name="adultos">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                  </select>
+               </div>
+
+               <div class="campo">
+                  <label>Crianças</label>
+                  <select name="criancas">
+                     <option>0</option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                  </select>
+               </div>
+
+               <button type="submit">Buscar</button>
+            </form>
+         </td>
       </tr>
 
       <!-- conteúdo_05 -->
       <tr>
-        <td colspan="2" align="center">
-          <h4>Todos os direitos reservados</h4>
-        </td>
+         <td colspan="2" align="center">
+            <h4>Todos os direitos reservados</h4>
+         </td>
       </tr>
-    </table>
+   </table>
 </body>
 </html>
