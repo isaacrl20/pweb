@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atividade 09 - Fontes e Tamanhos</title>
+  <style>
+    body {
+      background-color: #d8da3d;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: purple;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.navbar {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 2em;
+      left: 1em;
+      width: 9em;
+      text-align: left;
+    }
+
+    ul.navbar li {
+      background: white;
+      margin: 0.5em 0;
+      padding: 0.3em;
+      border-right: 1em solid black;
+    }
+
+    ul.navbar a {
+      text-decoration: none;
+      display: block;
+      padding-bottom: 0.3em;
+    }
+
+    a:link {
+      color: blue;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    /* Div principal */
+    .conteudo {
+      font-size: 30px; /* tamanho base do contêiner */
+      margin-left: 12em;
+      margin-top: 2em;
+      text-align: left;
+    }
+
+    /* Títulos e parágrafos */
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2em; /* 2 × 30px = 60px */
+    }
+
+    h2 {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1.5em; /* 1.5 × 30px = 45px */
+    }
+
+    p {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1em; /* 1 × 30px = 30px */
+    }
+
+    /* Linha traçada */
+    .linha {
+      border-top: 2px dotted purple;
+      width: 100%;
+      margin: 2em 0 1em 0;
+    }
+
+    /* Rodapé */
+    address {
+      font-style: italic;
+      color: brown;
+      font-size: 0.8em; /* 0.8 × 30px = 24px */
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="navbar">
+    <li><a href="index.html">Home page</a></li>
+    <li><a href="pensamentos.html">Pensamentos</a></li>
+    <li><a href="minha_cidade.html">Minha cidade</a></li>
+    <li><a href="links.html">Links</a></li>
+  </ul>
+
+  <div class="conteudo">
+    <h1>Minha primeira página CSS</h1>
+    <h2>Bem vindos à minha página estilizada!</h2>
+
+    <p>Minha página não contém imagens, mas está estilizada. Ela contém links, que não levam a lugar algum...</p>
+    <p>Deveria haver mais textos aqui, porém eu ainda não decidi o que escrever.</p>
+
+    <div class="linha"></div>
+
+    <address>
+      Construída em 15 de dezembro de 2004<br>
+      por mim mesmo.
+    </address>
+  </div>
+</body>
+</html>
