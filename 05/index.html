@@ -25,11 +25,11 @@
 
     h1 {
       font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
-      margin: 0.5em 0;
+      margin-top: 2em; /* Alinha o título com o link Home page */
     }
 
     p {
-      margin: 0.5em 0 1em 0;
+      margin-top: 0.5em;
     }
 
     ul.navbar li {
@@ -53,15 +53,11 @@
       color: purple;
     }
 
-    /* Conteúdo logo abaixo do link Contato */
-    .conteudo {
-      margin-top: 8em; /* posiciona abaixo do menu */
-    }
-
+    /* Linha roxa e rodapé permanecem abaixo */
     .linha {
-      border-top: 2px solid purple; /* linha roxa traçada */
+      border-top: 2px solid purple;
       width: 100%;
-      margin: 1em auto;
+      margin: 2em auto 1em auto;
     }
 
     address {
@@ -77,16 +73,16 @@
     <li><a href="contato.html">Contato</a></li>
   </ul>
 
-  <div class="conteudo">
-    <h1>Minha primeira página CSS</h1>
-    <p>Bem-vindo à minha página estilizada!</p>
+  <!-- Texto principal na altura do link Home page -->
+  <h1>Minha primeira página CSS</h1>
+  <p>Bem-vindo à minha página estilizada!</p>
 
-    <div class="linha"></div>
+  <!-- Linha roxa e rodapé permanecem abaixo -->
+  <div class="linha"></div>
 
-    <address>
-      Construída em janeiro de 2004<br>
-      por mim mesmo.
-    </address>
-  </div>
+  <address>
+    Construída em janeiro de 2004<br>
+    por mim mesmo.
+  </address>
 </body>
 </html>
