@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Minha primeira página CSS</title>
-  <style>
-    /* estilo geral */
+  <style type="text/css">
     body {
-      background-color: #d6d6d6; /* fundo do site */
+      background-color: #ffff66; /* fundo amarelo */
       font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
     }
 
     h1 {
@@ -15,7 +15,6 @@
       text-align: center;
     }
 
-    /* classe para menu */
     .menu {
       width: 150px;
       float: left;
@@ -35,16 +34,14 @@
       background-color: #66a3ff;
     }
 
-    /* ID para conteúdo */
-    #conteudo {
+    .conteudo {
       margin-left: 180px;
       padding: 10px;
       border: 1px solid #000;
-      background-color: #fff; /* bloco branco enquadrado */
+      background-color: #fff;
       text-align: justify;
     }
 
-    /* ID para rodapé */
     #rodape {
       clear: both;
       text-align: center;
@@ -55,7 +52,7 @@
   </style>
 </head>
 <body>
-  <h1 id="titulo">Minha primeira página CSS</h1>
+  <h1>Minha primeira página CSS</h1>
 
   <div class="menu">
     <a href="#">Home page</a>
@@ -64,8 +61,8 @@
     <a href="#">Links</a>
   </div>
 
-  <div id="conteudo">
-    <p style="color: green;">Bem-vindos à minha página estilizada!</p> <!-- exemplo de estilo inline -->
+  <div class="conteudo">
+    <p>Bem-vindos à minha página estilizada!</p>
     <p>Minha página não contém imagens, mas está estilizada. Ela contém links, que não levam a lugar algum.</p>
     <p>Deveria haver mais texto aqui, porém eu ainda não decidi o que escrever.</p>
   </div>
