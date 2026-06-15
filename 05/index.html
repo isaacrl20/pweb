@@ -7,7 +7,7 @@
       font-family: Georgia, "Times New Roman", Times, serif;
       color: purple;
       background-color: #d8da3d;
-      text-align: center; /* Centraliza todo o conteúdo */
+      text-align: center;
       margin: 0;
       padding: 0;
     }
@@ -40,10 +40,6 @@
       padding-bottom: 0.3em;
     }
 
-    ul.navbar a[href="contato.html"] {
-      border-bottom: 2px solid black; /* Linha abaixo do nome Contato */
-    }
-
     a:link {
       color: blue;
     }
@@ -52,9 +48,18 @@
       color: purple;
     }
 
+    /* Área do texto e linha roxa abaixo do menu */
+    .conteudo {
+      margin-top: 10em; /* Move o texto para baixo do link Contato */
+    }
+
+    .linha {
+      border-top: 2px solid purple; /* Linha roxa */
+      width: 100%;
+      margin: 1em auto;
+    }
+
     address {
-      padding-top: 1em;
-      border-top: thin dotted;
       font-style: italic;
     }
   </style>
@@ -67,12 +72,16 @@
     <li><a href="contato.html">Contato</a></li>
   </ul>
 
-  <h1>Minha primeira página CSS</h1>
-  <p>Bem-vindo à minha página estilizada!</p>
+  <div class="conteudo">
+    <h1>Minha primeira página CSS</h1>
+    <p>Bem-vindo à minha página estilizada!</p>
 
-  <address>
-    Construída em janeiro de 2004<br>
-    por mim mesmo.
-  </address>
+    <div class="linha"></div>
+
+    <address>
+      Construída em janeiro de 2004<br>
+      por mim mesmo.
+    </address>
+  </div>
 </body>
 </html>
