@@ -7,7 +7,6 @@
       font-family: Georgia, "Times New Roman", Times, serif;
       color: purple;
       background-color: #d8da3d;
-      text-align: center;
       margin: 0;
       padding: 0;
     }
@@ -21,15 +20,6 @@
       left: 1em;
       width: 9em;
       text-align: left;
-    }
-
-    h1 {
-      font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
-      margin-top: 2em; /* Alinha o título com o link Home page */
-    }
-
-    p {
-      margin-top: 0.5em;
     }
 
     ul.navbar li {
@@ -53,15 +43,32 @@
       color: purple;
     }
 
-    /* Linha roxa e rodapé permanecem abaixo */
+    /* Conteúdo principal ao lado do menu */
+    .conteudo {
+      margin-left: 12em; /* desloca o texto para o lado direito do menu */
+      margin-top: 2em;
+      text-align: left;
+    }
+
+    h1 {
+      font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin: 0.5em 0;
+    }
+
     .linha {
-      border-top: 2px solid purple;
+      border-top: 2px dotted purple; /* linha traçada roxa */
       width: 100%;
-      margin: 2em auto 1em auto;
+      margin: 2em 0 1em 0;
     }
 
     address {
       font-style: italic;
+      color: brown;
     }
   </style>
 </head>
@@ -69,20 +76,23 @@
 <body>
   <ul class="navbar">
     <li><a href="index.html">Home page</a></li>
+    <li><a href="pensamentos.html">Pensamentos</a></li>
+    <li><a href="minha_cidade.html">Minha cidade</a></li>
     <li><a href="links.html">Links</a></li>
-    <li><a href="contato.html">Contato</a></li>
   </ul>
 
-  <!-- Texto principal na altura do link Home page -->
-  <h1>Minha primeira página CSS</h1>
-  <p>Bem-vindo à minha página estilizada!</p>
+  <div class="conteudo">
+    <h1>Minha primeira página CSS</h1>
+    <p>Bem vindos à minha página estilizada!</p>
+    <p>Minha página não contém imagens, mas está estilizada. Ela contém links, que não levam a lugar algum...</p>
+    <p>Deveria haver mais textos aqui porém eu ainda não decidi o que escrever.</p>
 
-  <!-- Linha roxa e rodapé permanecem abaixo -->
-  <div class="linha"></div>
+    <div class="linha"></div>
 
-  <address>
-    Construída em janeiro de 2004<br>
-    por mim mesmo.
-  </address>
+    <address>
+      Construída em 15 de dezembro de 2004<br>
+      por mim mesmo.
+    </address>
+  </div>
 </body>
 </html>
