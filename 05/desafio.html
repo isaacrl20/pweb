@@ -83,13 +83,16 @@ body {
 }
 
 /* Itens como texto normal */
-.itens p {
-  background-color: #f9f9f9; /* fundo diferente para não parecer link */
-  padding: 10px;
+.itens {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.itens span {
   margin-bottom: 10px;
   color: #333;
-  font-weight: normal;
-  border: 1px solid #ccc;
+  font-weight: normal; /* texto simples */
 }
   
 /* Conteúdo principal */
@@ -144,9 +147,9 @@ body {
         </div>
 
         <div class="itens">
-          <p>Item 1</p>
-          <p>Item 2</p>
-          <p>Item 3</p>
+          <span>Item 1</span>
+          <span>Item 2</span>
+          <span>Item 3</span>
         </div>
       </div>
     </div>
