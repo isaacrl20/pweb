@@ -57,15 +57,20 @@ border: 1px solid #b0c4de;
 min-height: 250px;
 }
 
+/* Container interno para links + itens */
+.sidebar-flex {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
 /* Links da barra lateral */
 .sidebar a {
-display: block;
 background-color: #e0e0e0;
 color: #0b5a30;
 text-decoration: none;
 font-weight: bold;
 padding: 10px;
-margin-bottom: 10px;
 border-left: 10px solid #000;
 transition: background-color 0.3s;
 }
@@ -74,22 +79,23 @@ transition: background-color 0.3s;
 background-color: #c0c0c0;
 }
 
-/* Quadro cinza interno */
-.quadro-cinza {
-background-color: #e0e0e0;
-padding: 15px;
-border: 1px solid #a0a0a0;
-margin-top: 20px;
-}
-
-/* Lista de itens */
-.quadro-cinza ul {
+/* Itens ao lado dos links */
+.sidebar ul {
 list-style-position: inside;
+margin: 0;
+padding: 0;
 }
 
-.quadro-cinza li {
-margin-bottom: 12px;
+.sidebar li {
+background-color: #e0e0e0;
+padding: 10px;
+margin-bottom: 10px;
 color: #333;
+border-left: 10px solid #000;
+font-weight: bold;
+}
+.sidebar li:hover {
+background-color: #c0c0c0;
 }
 
 /* Conteúdo principal */
@@ -134,13 +140,13 @@ Minha Página Web
 <div class="main-container">
 
 <div class="sidebar">
+<div class="sidebar-flex">
 <a href="#">Home page</a>
 <a href="#">Pensamentos</a>
 <a href="#">Minha cidade</a>
 <a href="#">Links</a>
 <a href="#">Desafio</a>
 
-<div class="quadro-cinza">
 <ul>
 <li>Item 1</li>
 <li>Item 2</li>
