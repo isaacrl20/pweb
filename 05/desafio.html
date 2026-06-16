@@ -74,6 +74,24 @@ transition: background-color 0.3s;
 background-color: #c0c0c0;
 }
 
+/* Quadro cinza interno */
+.quadro-cinza {
+background-color: #e0e0e0;
+padding: 15px;
+border: 1px solid #a0a0a0;
+margin-top: 20px;
+}
+
+/* Lista de itens */
+.quadro-cinza ul {
+list-style-position: inside;
+}
+
+.quadro-cinza li {
+margin-bottom: 12px;
+color: #333;
+}
+
 /* Conteúdo principal */
 .content {
 background-color: #ffffff;
@@ -82,19 +100,20 @@ padding: 15px;
 border: 1px solid #b0c4de;
 }
 
-.quadro-cinza {
+.content .quadro-cinza {
 background-color: #e0e0e0;
 padding: 15px;
 border: 1px solid #a0a0a0;
 height: 100%;
 }
 
-.quadro-cinza p {
+.content p {
 margin-bottom: 15px;
 color: #333;
 line-height: 1.5;
 }
 
+/* Rodapé */
 .footer {
 background-color: #1a252f;
 color: white;
@@ -120,6 +139,14 @@ Minha Página Web
 <a href="#">Minha cidade</a>
 <a href="#">Links</a>
 <a href="#">Desafio</a>
+
+<div class="quadro-cinza">
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+</div>
 </div>
 
 <div class="content">
