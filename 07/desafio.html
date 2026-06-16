@@ -5,124 +5,104 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Desafio: Criando uma Página Web com div</title>
 <style>
+/* Reset de margens padrão */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
 }
 
 body {
-  padding: 40px 20px;
-  background-color: #f4f4f9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+padding: 40px 20px;
+background-color: #f4f4f9;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 /* Moldura Verde Escura Externa */
 .moldura-principal {
-  background-color: #0b5a30;
-  width: 100%;
-  max-width: 900px;
-  padding: 20px;
-  border-radius: 4px;
+background-color: #0b5a30;
+width: 100%;
+max-width: 900px;
+padding: 20px;
+border-radius: 4px;
 }
 
-/* Cabeçalho */
+/* 1. Cabeçalho (Verde Mais Claro) */
 .header {
-  background-color: #118244;
-  color: white;
-  text-align: center;
-  padding: 25px;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  border: 2px solid #ffffff;
+background-color: #118244;
+color: white;
+text-align: center;
+padding: 25px;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+border: 2px solid #ffffff;
 }
 
-/* Container principal */
+/* Container que junta a Barra Lateral e o Conteúdo */
 .main-container {
-  display: flex;
-  margin-bottom: 20px;
-  gap: 20px;
+display: flex;
+margin-bottom: 20px;
+gap: 20px;
 }
 
-/* Barra lateral */
+/* 2. Barra Lateral (Esquerda) */
 .sidebar {
-  background-color: #ffffff;
-  width: 25%;
-  padding: 15px;
-  border: 1px solid #b0c4de;
-  min-height: 250px;
+background-color: #ffffff; /* Fundo branco que serve de moldura */
+width: 25%;
+padding: 15px;
+border: 1px solid #b0c4de;
+min-height: 250px;
 }
 
-/* Flex para links + itens */
-.sidebar-flex {
-  display: flex;
-  flex-direction: row; /* lado a lado */
-  justify-content: space-between;
-  gap: 20px;
-}
-
-/* Links da barra lateral */
-.links a {
-  display: block;
-  background-color: #e0e0e0;
-  color: #0b5a30;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-left: 10px solid #000;
-  transition: background-color 0.3s;
-}
-
-.links a:hover {
-  background-color: #c0c0c0;
-}
-
-/* Itens como texto normal */
-.itens {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.itens span {
-  margin-bottom: 10px;
-  color: #333;
-  font-weight: normal; /* texto simples */
-}
-  
-/* Conteúdo principal */
+/* 3. Conteúdo Principal (Direita) */
 .content {
-  background-color: #ffffff;
-  width: 75%;
-  padding: 15px;
-  border: 1px solid #b0c4de;
+background-color: #ffffff; /* Fundo branco que serve de moldura */
+width: 75%;
+padding: 15px; /* Ajustado para 15px para igualar à barra lateral */
+border: 1px solid #b0c4de;
 }
 
-.content .quadro-cinza {
-  background-color: #e0e0e0;
-  padding: 15px;
-  border: 1px solid #a0a0a0;
-  height: 100%;
+/* --- Quadro Cinza Interno (Usado em ambos os lados agora) --- */
+.quadro-cinza {
+background-color: #e0e0e0; /* Cor cinza de fundo */
+padding: 15px;
+border: 1px solid #a0a0a0; /* Bordinha do quadro cinza */
+height: 100%; /* Faz o quadro ocupar toda a altura da caixa branca */
 }
 
-.content p {
-  margin-bottom: 15px;
-  color: #333;
-  line-height: 1.5;
+/* Estilos dos itens da lista (lado esquerdo) */
+.quadro-cinza ul {
+list-style-position: inside;
 }
 
-/* Rodapé */
+.quadro-cinza li {
+margin-bottom: 12px;
+color: #333;
+}
+
+/* Estilos do texto (lado direito) */
+.quadro-cinza p {
+margin-bottom: 15px;
+color: #333;
+line-height: 1.5;
+}
+
+/* Remove a margem do último parágrafo para não quebrar o espaçamento interno */
+.quadro-cinza p:last-child {
+margin-bottom: 0;
+}
+
+/* 4. Rodapé (Azul Escuro) */
 .footer {
-  background-color: #1a252f;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
+background-color: #1a252f;
+color: white;
+text-align: center;
+padding: 15px;
+font-size: 14px;
 }
 </style>
 </head>
@@ -130,32 +110,34 @@ body {
 
 <div class="moldura-principal">
 
-  <div class="header">
-    Minha Página Web
-  </div>
+<div class="header">
+Minha Página Web
+</div>
 
-  <div class="main-container">
+<div class="main-container">
 
-        <div class="itens">
-          <span>Item 1</span>
-          <span>Item 2</span>
-          <span>Item 3</span>
-        </div>
-      </div>
-    </div>
+<div class="sidebar">
+<div class="quadro-cinza">
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+</div>
+</div>
 
-    <div class="content">
-      <div class="quadro-cinza">
-        <p>Este é o conteúdo principal da página.</p>
-        <p>Adicione mais parágrafos ou elementos conforme necessário.</p>
-      </div>
-    </div>
+<div class="content">
+<div class="quadro-cinza">
+<p>Este é o conteúdo principal da página.</p>
+<p>Adicione mais parágrafos ou elementos conforme necessário.</p>
+</div>
+</div>
 
-  </div>
+</div>
 
-  <div class="footer">
-    Rodapé da Página
-  </div>
+<div class="footer">
+Rodapé da Página
+</div>
 
 </div>
 
