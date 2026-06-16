@@ -82,26 +82,16 @@ body {
   background-color: #c0c0c0;
 }
 
-/* Itens */
-.itens ul {
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
-}
-
-.itens li {
-  background-color: #e0e0e0;
+/* Itens como texto normal */
+.itens p {
+  background-color: #f9f9f9; /* fundo diferente para não parecer link */
   padding: 10px;
   margin-bottom: 10px;
   color: #333;
-  border-left: 10px solid #000;
-  font-weight: bold;
+  font-weight: normal;
+  border: 1px solid #ccc;
 }
-
-.itens li:hover {
-  background-color: #c0c0c0;
-}
-
+  
 /* Conteúdo principal */
 .content {
   background-color: #ffffff;
@@ -154,11 +144,9 @@ body {
         </div>
 
         <div class="itens">
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
+          <p>Item 1</p>
+          <p>Item 2</p>
+          <p>Item 3</p>
         </div>
       </div>
     </div>
