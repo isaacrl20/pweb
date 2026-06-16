@@ -2,115 +2,84 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Atividade 09 - Posicionamento</title>
+  <title>Desafio Opcional - Posicionamento</title>
   <style>
-    /* Fundo geral */
     body {
-      background: #61bd8c;
       font-family: Arial, Helvetica, sans-serif;
-      color: #333;
+      background-color: #e0e0e0;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around; /* coloca os dois layouts lado a lado */
     }
 
-    /* Container principal */
-    #conteudo {
-      background: #FFFFFF;
-      padding: 10px;
-      width: 900px;
-      margin: 30px auto;
-      text-align: center;
+    /* Container geral de cada layout */
+    .layout {
+      background-color: #fff;
+      width: 45%;
+      border: 2px solid #333;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
-    /* Classe caixa */
-    .caixa {
-      background: red;
-      margin: 10px;
-      width: 100px;
-      height: 100px;
-      color: #FFFFFF;
-      display: inline-block;
-      line-height: 100px;
-      font-weight: bold;
-    }
-
-    /* Tipos de posicionamento */
-    #relativo {
-      position: relative;
-      left: 30px;
-    }
-
-    #absoluto {
-      position: absolute;
-      left: 30px;
-      top: 250px;
-    }
-
-    #fixo {
-      position: fixed;
-      left: 200px;
-      top: 0px;
-    }
-
-    /* Desafio Opcional — Layout Fixar Header */
+    /* Layout 1 - Fixar Header */
     .header {
       position: fixed;
       top: 0;
-      left: 0;
-      width: 100%;
+      width: 45%;
       height: 80px;
-      background: #4682B4;
+      background-color: #4682B4;
       color: white;
       text-align: center;
       line-height: 80px;
-      font-size: 1.5em;
       font-weight: bold;
+      font-size: 1.3em;
     }
 
     .menu {
-      margin-top: 100px;
-      background: #FF8C00;
-      padding: 10px;
+      background-color: #FF8C00;
       text-align: center;
+      padding: 10px;
       font-weight: bold;
+      margin-top: 100px;
+    }
+
+    .left, .center, .right {
+      float: left;
+      height: 300px;
     }
 
     .left {
-      float: left;
       width: 25%;
-      background: #FFD700;
-      height: 300px;
+      background-color: #FFD700;
     }
 
     .center {
-      float: left;
       width: 50%;
-      background: #90EE90;
-      height: 300px;
+      background-color: #90EE90;
     }
 
     .right {
-      float: left;
       width: 25%;
-      background: #FFA07A;
-      height: 300px;
+      background-color: #FFA07A;
     }
 
     .footer {
       clear: both;
-      background: #9370DB;
+      background-color: #9370DB;
       color: white;
       text-align: center;
       padding: 10px;
       font-weight: bold;
     }
 
-    /* Desafio Opcional — Layout Fixar Side Bar */
+    /* Layout 2 - Fixar Side Bar */
     .sidebar {
       position: fixed;
       right: 0;
       top: 0;
       width: 200px;
       height: 100%;
-      background: #2F4F4F;
+      background-color: #2F4F4F;
       color: white;
       text-align: center;
       line-height: 2em;
@@ -119,43 +88,48 @@
 
     .content {
       margin-right: 220px;
-      background: #32CD32;
+      background-color: #32CD32;
       padding: 20px;
       height: 400px;
     }
 
     .footer2 {
-      background: #8B0000;
+      background-color: #8B0000;
       color: white;
       text-align: center;
       padding: 10px;
       font-weight: bold;
     }
+
+    /* Títulos */
+    h2 {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      margin: 0;
+      padding: 10px;
+    }
   </style>
 </head>
 
 <body>
-  <span>Container body</span>
-
-  <div id="conteudo">
-    Container div
-
-    <div id="relativo" class="caixa">Relativo</div>
-    <div id="absoluto" class="caixa">Absoluto</div>
-    <div id="fixo" class="caixa">Fixo</div>
+  <!-- Layout 1: Fixar Header -->
+  <div class="layout">
+    <h2>Fixar Header</h2>
+    <div class="header">HEADER FIXO</div>
+    <div class="menu">MENU</div>
+    <div class="left">LEFT</div>
+    <div class="center">CENTER</div>
+    <div class="right">RIGHT</div>
+    <div class="footer">FOOTER</div>
   </div>
 
-  <!-- Desafio Opcional: Fixar Header -->
-  <div class="header">HEADER FIXO</div>
-  <div class="menu">MENU</div>
-  <div class="left">LEFT</div>
-  <div class="center">CENTER</div>
-  <div class="right">RIGHT</div>
-  <div class="footer">FOOTER</div>
-
-  <!-- Desafio Opcional: Fixar Side Bar -->
-  <div class="sidebar">SIDE BAR</div>
-  <div class="content">CONTEÚDO PRINCIPAL</div>
-  <div class="footer2">FOOTER</div>
+  <!-- Layout 2: Fixar Side Bar -->
+  <div class="layout">
+    <h2>Fixar Side Bar</h2>
+    <div class="sidebar">SIDE BAR</div>
+    <div class="content">CONTEÚDO PRINCIPAL</div>
+    <div class="footer2">FOOTER</div>
+  </div>
 </body>
 </html>
