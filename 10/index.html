@@ -1,177 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal de Notícias</title>
+  <meta charset="UTF-8">
+  <title>Portal de Notícias</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
 
-<style>
+    header {
+      background-color: #006341;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-background: #f4f4f4;
-margin: 0;
-}
+    nav {
+      background-color: #EEE685;
+      text-align: center;
+      padding: 10px;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 18px;
+    }
 
-header{
-background: #00695c;
-color: white;
-text-align: center;
-padding: 20px;
-}
+    nav a {
+      color: #006341;
+      text-decoration: none;
+      margin: 0 10px;
+    }
 
-nav{
-background: #e6ee85;
-padding: 15px;
-text-align: center;
-}
+    nav a:hover {
+      background-color: #B84746;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+    }
 
-nav a:link{
-color: #0b6e4f;
-text-decoration: none;
-}
+    .container {
+      width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
 
-nav a:visited{
-color: #458B00;
-}
+    .card {
+      width: 400px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 10px;
+      float: left;
+      box-sizing: border-box;
+    }
 
-nav a:hover{
-color: #ff1493;
-background: yellow;
-padding: 5px;
-}
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+    }
 
-nav a:active{
-color: red;
-}
+    .card header {
+      font-weight: bold;
+      color: #006341;
+      margin-bottom: 5px;
+    }
 
-section{
-width: 90%;
-margin: auto;
-}
+    .card p {
+      text-align: justify;
+      margin: 10px 0;
+    }
 
-article{
-background: white;
-border: 1px solid #ccc;
-margin: 20px;
-padding: 15px;
-overflow: auto;
-}
+    .card footer {
+      font-size: 12px;
+      color: #555;
+      text-align: right;
+    }
 
-article img{
-width: 150px;
-float: left;
-margin-right: 15px;
-}
-
-article header{
-background: #ddd;
-color: black;
-padding: 10px;
-margin-bottom: 10px;
-}
-
-article footer{
-background: #eee;
-padding: 8px;
-margin-top: 10px;
-text-align: right;
-}
-
-</style>
+    footer {
+      clear: both;
+      background-color: #006341;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<h1>Portal de Notícias</h1>
-</header>
+  <header>
+    <h1>Portal de Notícias</h1>
+  </header>
 
-<nav>
-<a href="#">Google</a> |
-<a href="#">Tech Tudo</a> |
-<a href="#">Maujor</a>
-</nav>
+  <nav>
+    <a href="https://www.google.com">Google</a> |
+    <a href="https://www.techtudo.com.br">TechTudo</a> |
+    <a href="https://www.maujor.com">Maujor</a>
+  </nav>
 
-<section>
+  <div class="container">
 
-<article>
-<header>
-Portal Tecnologia
-</header>
+    <article class="card">
+      <header>InfoMoney</header>
+      <img src="img/militar-amigo.jpg" alt="Imagem 1">
+      <p>Preços no mercado livre operam próximos à estabilidade apesar de seca prolongada em regiões agrícolas.</p>
+      <footer>Publicado há 2 horas</footer>
+    </article>
 
-<img src="https://picsum.photos/150/100?1">
+    <article class="card">
+      <header>R7.COM</header>
+      <img src="img/pessoa-de-costas.jpg" alt="Imagem 2">
+      <p>Nobel da Paz: conheça nomes cotados para o prêmio deste ano, que será anunciado em breve.</p>
+      <footer>Publicado há 3 horas</footer>
+    </article>
 
-<h2>Novo celular é lançado</h2>
+    <article class="card">
+      <header>Terra</header>
+      <img src="img/OIP.jpg" alt="Imagem 3">
+      <p>Avião derrapa e explode em aeroporto de Cuiabá; duas pessoas morreram e outras estão feridas.</p>
+      <footer>Publicado há 6 horas</footer>
+    </article>
 
-<p>
-Uma empresa apresentou um novo smartphone com
-recursos de inteligência artificial e bateria de longa duração.
-</p>
+    <article class="card">
+      <header>G1</header>
+      <img src="img/OIP (1).webp" alt="Imagem 4">
+      <p>Rompimento de lago glacial após fortes chuvas deixa 14 mortos e 102 desaparecidos em região montanhosa.</p>
+      <footer>Publicado há 14 horas</footer>
+    </article>
 
-<footer>
-Publicado em: 16/06/2026
-</footer>
-</article>
+  </div>
 
-<article>
-<header>
-Portal Esportes
-</header>
-
-<img src="https://picsum.photos/150/100?2">
-
-<h2>Time vence campeonato</h2>
-
-<p>
-Após uma partida emocionante, a equipe conquistou
-o título e comemorou com sua torcida.
-</p>
-
-<footer>
-Publicado em: 15/06/2026
-</footer>
-</article>
-
-<article>
-<header>
-Portal Economia
-</header>
-
-<img src="https://picsum.photos/150/100?3">
-
-<h2>Mercado apresenta crescimento</h2>
-
-<p>
-Indicadores econômicos apontam aumento nas vendas
-e expectativa positiva para os próximos meses.
-</p>
-
-<footer>
-Publicado em: 14/06/2026
-</footer>
-</article>
-
-<article>
-<header>
-Portal Ciência
-</header>
-
-<img src="https://picsum.photos/150/100?4">
-
-<h2>Nova descoberta espacial</h2>
-
-<p>
-Pesquisadores identificaram sinais promissores em
-uma região distante do universo.
-</p>
-
-<footer>
-Publicado em: 13/06/2026
-</footer>
-</article>
-
-</section>
+  <footer>
+    <p>Desenvolvido por Isaac Loureiro — Aula 12 HTML5</p>
+  </footer>
 
 </body>
 </html>
