@@ -25,7 +25,10 @@
       padding: 5px;
       margin: 10px;
       float: left;
-      border: 3px solid #999; /* borda padronizada */
+      /* borda original */
+      border-style: solid;
+      border-width: 5px 10px 5px 5px;
+      border-color: #ccc;
       box-sizing: border-box;
     }
 
@@ -49,12 +52,19 @@
 <body>
   <div class="container">
 
-    <!-- Primeira linha -->
+    <!-- Soldado -->
     <div class="galeria">
       <img src="img/militar-amigo.jpg" alt="Imagem 1">
       <p>Resumo</p>
     </div>
 
+    <!-- Criança logo abaixo e à esquerda -->
+    <div class="galeria">
+      <img src="img/OIP (1).webp" alt="Imagem 5">
+      <p>Resumo</p>
+    </div>
+
+    <!-- Demais imagens -->
     <div class="galeria">
       <img src="img/OIP.webp" alt="Imagem 2">
       <p>Resumo</p>
@@ -67,12 +77,6 @@
 
     <div class="galeria">
       <img src="img/OIP.jpg" alt="Imagem 4">
-      <p>Resumo</p>
-    </div>
-
-    <!-- Segunda linha: criança movida para a direita -->
-    <div class="galeria">
-      <img src="img/OIP (1).webp" alt="Imagem 5">
       <p>Resumo</p>
     </div>
 
