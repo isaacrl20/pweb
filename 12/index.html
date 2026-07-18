@@ -2,56 +2,45 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Atividade 12 - Atributo Data</title>
-    <script type="text/javascript">
-        // Função que mostra o valor do atributo data-idade e o nome da pessoa
-        function mostrarvalor(componente) {
-            var idade = componente.getAttribute('data-idade');
-            var nome = componente.textContent;
-            alert("Nome: " + nome + "\nIdade: " + idade);
-        }
-    </script>
+    <title>Exercício - CSS + Custom Data</title>
     <style>
-        body {
+        /* Classe base */
+        .pessoa {
+            color: red;
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            padding: 20px;
+            margin: 5px;
         }
 
-        h1 {
-            color: #00796b;
-            text-align: center;
+        /* Pessoa com idade 30 terá cor azul */
+        .pessoa[data-idade='30'] {
+            color: blue;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            width: 200px;
-            margin: 0 auto;
+        /* Pessoa com idade 40 terá cor roxa */
+        .pessoa[data-idade='40'] {
+            color: purple;
         }
 
-        li {
-            background-color: #e0f2f1;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-            transition: background-color 0.3s;
+        /* Adiciona texto antes e depois */
+        .pessoa::before {
+            content: "Nome: ";
+            font-weight: bold;
         }
 
-        li:hover {
-            background-color: #b2dfdb;
+        .pessoa::after {
+            content: " - Idade: " attr(data-idade) " Anos - C.P.F: " attr(data-cpf);
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <h1>Lista de Pessoas</h1>
-
     <ul>
-        <li class="pessoa" onclick="mostrarvalor(this)" data-idade="20">João</li>
-        <li class="pessoa" onclick="mostrarvalor(this)" data-idade="30">José</li>
-        <li class="pessoa" onclick="mostrarvalor(this)" data-idade="40">Maria</li>
+        <li class="pessoa" data-idade="20" data-cpf="999">João</li>
+        <li class="pessoa" data-idade="30" data-cpf="888">José</li>
+        <li class="pessoa" data-idade="40" data-cpf="777">Maria</li>
     </ul>
 </body>
+</html>
+
 </html>
