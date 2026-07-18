@@ -41,34 +41,31 @@
             position: absolute;
             width: 100px;
             height: 100px;
+            top: 50px;
+            left: 50px;
+            /* formato de "pétala" (gota): pontas nos cantos opostos */
+            border-radius: 0 50% 0 50%;
+            transform-origin: center;
         }
 
-        .red {
+        .flower .red {
             background-color: red;
-            top: 0;
-            left: 0;
-            border-radius: 100px 0 0 0;
+            transform: rotate(0deg);
         }
 
-        .orange {
+        .flower .orange {
             background-color: orange;
-            top: 0;
-            left: 100px;
-            border-radius: 0 100px 0 0;
+            transform: rotate(90deg);
         }
 
-        .green {
+        .flower .green {
             background-color: green;
-            top: 100px;
-            left: 0;
-            border-radius: 0 0 0 100px;
+            transform: rotate(180deg);
         }
 
-        .purple {
+        .flower .purple {
             background-color: purple;
-            top: 100px;
-            left: 100px;
-            border-radius: 0 0 100px 0;
+            transform: rotate(270deg);
         }
 
         /* Círculo dividido em quatro partes */
