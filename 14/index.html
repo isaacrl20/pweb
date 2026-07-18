@@ -2,9 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Gradiente Linear - Tela Cheia</title>
+    <title>Atividade - Gradiente Linear</title>
     <style>
-        /* Remove margens e garante que o gradiente ocupe toda a tela */
         html, body {
             height: 100%;
             margin: 0;
@@ -12,31 +11,33 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Fundo com gradiente ocupando toda a tela */
+        /* Gradiente igual ao da imagem */
         body {
-            background: linear-gradient(to top left, red, orange, yellow, green, cyan, blue, violet);
-            box-sizing: border-box;
+            background: linear-gradient(to top right, cyan, magenta, green, red);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
         }
 
-        /* Caixa de conteúdo centralizada */
         .box {
-            width: 60%;
-            max-width: 800px;
+            width: 400px;
+            height: 300px;
             margin: 100px auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.5); /* Transparência */
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.5);
             box-shadow: 10px 10px 5px #888888;
             border-radius: 10px;
-            text-align: center;
+            padding: 20px;
         }
 
         .box h1 {
+            background: rgba(255, 255, 255, 0.5);
             text-shadow: 3px 3px 3px orange;
-            color: #333;
+            padding: 10px;
         }
 
         .box p {
-            color: #222;
+            color: #333;
             background: rgba(255, 255, 255, 0.6);
             padding: 10px;
             border-radius: 5px;
@@ -47,7 +48,7 @@
     <div class="box">
         <h1>Lorem Ipsum</h1>
         <p>
-            É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.
+            É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. 
             A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de “Conteúdo aqui, conteúdo aqui”, 
             fazendo com que ele tenha uma aparência similar a de um texto legível.
         </p>
