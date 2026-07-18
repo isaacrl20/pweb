@@ -41,31 +41,37 @@
             position: absolute;
             width: 100px;
             height: 100px;
-            top: 50px;
-            left: 50px;
-            /* Formato de pétala: cantos opostos arredondados a 50% */
-            border-radius: 0 50% 0 50%;
-            transform-origin: center;
         }
 
+        /* Cada pétala: três cantos arredondados (50%) e o canto
+           voltado para o centro da flor com raio 0, formando o
+           formato de "gota" que aponta para o meio */
         .flower .red {
             background-color: red;
-            transform: rotate(0deg);
+            top: 0;
+            left: 0;
+            border-radius: 50% 50% 0 50%;
         }
 
         .flower .orange {
             background-color: orange;
-            transform: rotate(90deg);
+            top: 0;
+            left: 100px;
+            border-radius: 50% 50% 50% 0;
         }
 
         .flower .green {
             background-color: green;
-            transform: rotate(180deg);
+            top: 100px;
+            left: 0;
+            border-radius: 50% 0 50% 50%;
         }
 
         .flower .purple {
             background-color: purple;
-            transform: rotate(270deg);
+            top: 100px;
+            left: 100px;
+            border-radius: 0 50% 50% 50%;
         }
 
         /* Círculo dividido em quatro partes */
