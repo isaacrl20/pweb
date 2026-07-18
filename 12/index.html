@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 12 - Atributo Data</title>
+    <script type="text/javascript">
+        // Função que mostra o valor do atributo data-idade e o nome da pessoa
+        function mostrarvalor(componente) {
+            var idade = componente.getAttribute('data-idade');
+            var nome = componente.textContent;
+            alert("Nome: " + nome + "\nIdade: " + idade);
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #00796b;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        li {
+            background-color: #e0f2f1;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        li:hover {
+            background-color: #b2dfdb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Pessoas</h1>
+
+    <ul>
+        <li class="pessoa" onclick="mostrarvalor(this)" data-idade="20">João</li>
+        <li class="pessoa" onclick="mostrarvalor(this)" data-idade="30">José</li>
+        <li class="pessoa" onclick="mostrarvalor(this)" data-idade="40">Maria</li>
+    </ul>
+</body>
+</html>
