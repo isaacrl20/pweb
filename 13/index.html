@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício - Efeito CSS3</title>
+    <title>Exercício - Flor e Círculo CSS3</title>
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <style>
@@ -20,7 +20,7 @@
         .container {
             display: flex;
             align-items: center;
-            gap: 40px;
+            gap: 60px;
         }
 
         /* Configuração geral das formas */
@@ -28,40 +28,46 @@
             width: 100px;
             height: 100px;
             box-sizing: border-box;
-            display: inline-block;
         }
 
         /* Flor com quatro pétalas */
         .flower {
-            display: grid;
-            grid-template-columns: repeat(2, 100px);
-            grid-template-rows: repeat(2, 100px);
-            gap: 0;
+            position: relative;
+            width: 200px;
+            height: 200px;
         }
 
         .flower div {
+            position: absolute;
             width: 100px;
             height: 100px;
-            box-sizing: border-box;
         }
 
         .red {
             background-color: red;
+            top: 0;
+            left: 0;
             border-radius: 100px 0 0 0;
         }
 
         .orange {
             background-color: orange;
+            top: 0;
+            left: 100px;
             border-radius: 0 100px 0 0;
         }
 
         .green {
             background-color: green;
+            top: 100px;
+            left: 0;
             border-radius: 0 0 0 100px;
         }
 
         .purple {
             background-color: purple;
+            top: 100px;
+            left: 100px;
             border-radius: 0 0 100px 0;
         }
 
@@ -106,7 +112,7 @@
     </style>
 </head>
 <body>
-    <h1>Exercício - Efeito com CSS3</h1>
+    <h1>Exercício - Flor e Círculo com CSS3</h1>
     <div class="container">
         <!-- Flor -->
         <div class="flower">
