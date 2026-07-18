@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Notícias</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #00796b;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    article {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      width: 65%;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    article img {
+      float: left;
+      margin-right: 10px;
+      border-radius: 5px;
+      width: 150px;
+      height: auto;
+    }
+
+    aside {
+      width: 30%;
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    aside h3 {
+      color: #004d40;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+      article, aside {
+        width: 100%;
+      }
+      article img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portal de Notícias</h1>
+  </header>
+
+  <main>
+    <!-- Postagem 1 -->
+    <article>
+      <header>
+        <h2>Título da Postagem</h2>
+        <p>Postado em <time datetime="2026-07-17">17 de julho de 2026</time></p>
+      </header>
+
+      <section>
+        <img src="https://via.placeholder.com/150" alt="Imagem da notícia">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae erat quis scelerisque.</p>
+      </section>
+
+      <footer>
+        <p>Postado por <strong>Fulano de Tal</strong></p>
+      </footer>
+    </article>
+
+    <!-- Postagem 2 -->
+    <article>
+      <header>
+        <h2>Nova Descoberta Científica</h2>
+        <p>Postado em <time datetime="2026-07-15">15 de julho de 2026</time></p>
+      </header>
+
+      <section>
+        <img src="https://via.placeholder.com/150" alt="Imagem científica">
+        <p>Pesquisadores revelam avanços importantes na área da biotecnologia que podem revolucionar a medicina.</p>
+      </section>
+
+      <footer>
+        <p>Postado por <strong>Maria Silva</strong></p>
+      </footer>
+    </article>
+
+    <!-- Barra lateral -->
+    <aside>
+      <h3>Últimas Notícias</h3>
+      <ul>
+        <li><a href="#">Economia em alta</a></li>
+        <li><a href="#">Tecnologia e inovação</a></li>
+        <li><a href="#">Esportes</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Portal de Notícias</p>
+  </footer>
+</body>
+</html>
