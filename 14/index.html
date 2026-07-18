@@ -4,35 +4,29 @@
     <meta charset="UTF-8">
     <title>Atividade - Gradiente Linear</title>
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Gradiente igual ao da imagem */
         body {
-            background: linear-gradient(to top right, cyan, magenta, green, red);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
         }
 
         .box {
             width: 400px;
             height: 300px;
-            margin: 100px auto;
+            margin: 50px;
             box-sizing: border-box;
-            background: rgba(255, 255, 255, 0.5);
+            /* Gradiente linear com várias cores */
+            background: linear-gradient(to top right, cyan, magenta, green, cyan,red);
+            /* Sombra da caixa */
             box-shadow: 10px 10px 5px #888888;
+            /* Arredondamento opcional */
             border-radius: 10px;
             padding: 20px;
         }
 
         .box h1 {
-            background: rgba(255, 255, 255, 0.5);
-            text-shadow: 3px 3px 3px orange;
+            background: rgba(255, 255, 255, 0.5); /* Transparência */
+            text-shadow: 3px 3px 3px orange; /* Sombra no texto */
             padding: 10px;
         }
 
